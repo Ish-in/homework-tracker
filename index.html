@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homework Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Homework Tracker</h1>
+    </header>
+
+    <main class="dashboard">
+        <section class="box homework">
+            <h2>Homework</h2>
+            <div class="homework-headings">
+                <span>Task</span>
+                <span>Priority</span>
+                <span>Due Date</span>
+            </div>
+            <div id="homeworkList">
+                <div>
+                    <span>Example Hw</span>
+                    <span>High</span>
+                    <span>25 Dec</span>
+                </div>
+            </div>
+        </section>
+        <section class="box add-homework">
+            <h2>Add Homework</h2>
+            <form id="HomeworkForm">
+                <input
+                    type="text"
+                    id="taskName"  
+                    placeholder="Task name"
+                    required
+                >
+                <select id="priority" required>
+                    <option value="">Priority</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <input
+                    type="date"
+                    id="dueDate"
+                    required
+                >
+                <button type="submit">
+                    Add Homework
+                </button>
+            </form>
+        </section>
+        <section class="box pomodoro">
+            <h2>Pomodoro Timer</h2>
+            <div id="timer">
+                25:00
+            </div>
+            <div class="timer-buttons">
+                <button id="startTimer">
+                    Start
+                </button>
+                <button id="pauseTimer">
+                    Pause
+                </button>
+                <button id="resetTimer">
+                    Reset
+                </button>
+            </div>
+        </section>
+        <section class="box todo">
+            <h2>To-Do List</h2>
+            <form id="todoForm">
+                <input
+                    type="text"
+                    id="todoInput"
+                    placeholder="Add a task..."
+                    required
+                >
+                <button type="submit">
+                    Add 
+                </button>
+            </form>
+            <ul id="todoList">
+            </ul>
+        </section>
+        <section class="box settings">
+            <h2>Settings</h2>
+            <button id="settingsButton">
+                Open Settings
+            </button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html> 

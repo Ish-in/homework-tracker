@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f7;
+    color: #18181b;
+    min-height: 100vh;
+}   
+header{
+    padding: 28px 40px 20px;
+}
+header h1{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.dashboard{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 18px;
+    padding: 10px 40px 40px;
+    height: calc(100vh - 85px);
+}
+.box{
+    background: #ffffff;
+    border: 1px solid #e8e8eb;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 
+        0px 2px 4px rgba(0, 0, 0, 0.02),
+        0px 8px 24px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+}
+.box h2{
+    font-size: 19px;
+    font-weight: 650;
+    margin-bottom: 20px;
+}
+.homework{
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+.homework-headings{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 10px 14px;
+    color: #8a8a91;
+    font-size: 13px;
+    font-weight: 600;
+    border-bottom: 1px solid #eeeeef;
+}
+.homework-item{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 16px 14px;
+    border-bottom: 1px solid #f0f0f2;
+    font-size: 14px;
+}
+.homework-item span:nth-child(2){
+    font-weight: 600;
+}
+.add-homework{
+  grid-column: 3;
+  grid-row: 1;
+}
+#homeworkFrom{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+#homeworkForm input,
+#homeworkForm select{
+    width: 100%;
+    padding: 12px 13px;
+    border: 1px solid #dedee3;
+    border-radius: 10px;
+    background: #fafafa;
+    color: #18181b;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+#homeworkForm input:focus,
+#homeworkForm select:focus{
+    border-color: #9999a3;
+    background: white;
+}
+#homeworkForm button{
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #18181b;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#homeworkForm button:hover{
+    background: #333338;
+    transform: translateY(-1px);
+}
+.pomodoro{
+    grid-column:1;
+    grid-row:2;
+    text-align:center;
+}
+#timer {
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:-1px;
+    margin: 18px 0 20px;
+}
+.timer-buttons button{
+    padding: 9px 15px;
+    border: 1px solid #dedee3;
+    border-radius: 9px;
+    background: #fafafa;
+    font-size: 13px;
+    font-weight: 500;
+    cursor:pointer;
+    transition:0.2s;
+}
+.timer-buttons button:hover {
+    background: #eeeeef;
+}
+.todo{
+    grid-column: 2;
+    grid-row: 2;
+}
+#todoForm{
+    display: flex;
+    gap: 8px;
+}
+#todoInput{
+    min-width: 0;
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #dedee3;
+    border-radius:9px;
+    background: #fafafa;
+    outline: none;
+}
+#todoInput:focus {
+    border-color: #9999a3;
+    background: white;
+}
+
+#todoForm button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 9px;
+    background-color: #18181b;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+#todoList {
+    list-style: none;
+    margin-top: 15px;
+}
+
+#todolist li {
+    padding: 10px 0;
+    padding-bottom: 1px solid #eeeeef;
+    font-size: 14px;
+}
+.settings {
+    grid-column: 3;
+    grid-row: 2;
+}
+#settingsButton {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dedee3;
+    border-radius: 10px;
+    background: #fafafa;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#settingsButton:hover {
+    background: #eeeeef;
+}
